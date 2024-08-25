@@ -26,6 +26,6 @@ func FilesController(c *gin.Context) {
 	if fileErr != nil {
 		log.Fatal(err)
 	}
-	c.JSON(http.StatusOK, gin.H{"url": "/" + fullpath})
+	c.JSON(http.StatusOK, gin.H{"url": fullpath})
 
 }
